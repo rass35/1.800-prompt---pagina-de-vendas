@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🚀 1.800 Prompts Secretos do ChatGPT</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #000;
+    color: #fff;
+    overflow-x: hidden;
+    height: 100%;
+  }
+
+  /* Canvas de partículas */
+  #particles {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+
+  /* Header preto futurista */
+  header {
+    background: rgba(0,0,0,0.85);
+    text-align: center;
+    padding: 80px 20px 60px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #0ff;
+    text-shadow: 0 0 15px #0ff, 0 0 30px #06b85d;
+    font-weight: 700;
+  }
+  header p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.5;
+    color: #cceeff;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+  }
+
+  /* Benefícios futuristas */
+  .beneficios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 25px;
+    margin-top: 40px;
+  }
+  .card {
+    background: rgba(0,0,0,0.8);
+    border: 2px solid #0ff;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 0 20px #0ff, 0 0 40px #06b85d;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px #0ff, 0 0 60px #06b85d;
+  }
+  .card h3 {
+    color: #0ff;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px #0ff;
+    font-weight: 700;
+  }
+  .card p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #cceeff;
+  }
+
+  /* CTA futurista */
+  .cta {
+    text-align: center;
+    margin: 60px 0;
+  }
+  .cta h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #06b85d;
+    font-weight: 700;
+  }
+  .cta p {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    color: #cceeff;
+  }
+  .cta button {
+    background: #0ff;
+    color: #000;
+    padding: 20px 50px;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 0 20px #0ff, 0 0 40px #06b85d;
+    transition: 0.3s, transform 0.3s;
+    font-weight: 700;
+  }
+  .cta button:hover {
+    background: #06b85d;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #0ff, 0 0 60px #06b85d;
+  }
+
+  /* Depoimentos futuristas */
+  .prova-social {
+    background: rgba(0,0,0,0.8);
+    padding: 60px 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #0ff, 0 0 40px #06b85d;
+    margin: 50px auto;
+    max-width: 900px;
+    text-align: center;
+  }
+  .depoimento {
+    margin-bottom: 30px;
+    font-style: italic;
+    position: relative;
+    padding-left: 25px;
+    color: #cceeff;
+    font-size: 1.1rem;
+  }
+  .depoimento:before {
+    content: "“";
+    font-size: 3rem;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
+  }
+  .depoimento strong {
+    display: block;
+    margin-top: 10px;
+    color: #06b85d;
+    font-weight: 700;
+  }
+
+  /* Footer futurista */
+  footer {
+    background: #000;
+    color: #0ff;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    font-size: 0.95rem;
+    text-shadow: 0 0 10px #0ff;
+  }
+
+  /* Notificações futuristas */
+  #notifications-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+  .notification {
+    background: rgba(0,255,255,0.9);
+    color: #000;
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin-top: 10px;
+    box-shadow: 0 0 20px #0ff, 0 0 40px #06b85d;
+    font-size: 1rem;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease;
+  }
+</style>
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<header>
+  <h1>🚀 1.800 Prompts Secretos do ChatGPT</h1>
+  <p>Eleve sua produtividade e criatividade com prompts futuristas!  
+  Domine Marketing, Vendas, Copywriting e Automação em minutos.</p>
+</header>
+
+<section class="container">
+  <h2 style="text-align:center;">✅ Benefícios Principais</h2>
+  <div class="beneficios">
+    <div class="card">
+      <h3>📌 1.800 Prompts Exclusivos</h3>
+      <p>Organizados em áreas como Marketing, Vendas, Copywriting e Produtividade.</p>
+    </div>
+    <div class="card">
+      <h3>⚡ Resultados Imediatos</h3>
+      <p>Gere textos, ideias e estratégias em segundos com alta precisão.</p>
+    </div>
+    <div class="card">
+      <h3>🎯 Fácil de Usar</h3>
+      <p>Basta copiar e colar no ChatGPT e ver a mágica futurista acontecer.</p>
+    </div>
+    <div class="card">
+      <h3>💡 Inspiração Infinita</h3>
+      <p>Nunca mais fique sem ideias e explore criatividade ilimitada.</p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <h2>🔥 Oferta Especial Hoje</h2>
+    <p><strong>De R$ 97,00 por apenas R$ 9,99</strong> (acesso imediato e ilimitado)</p>
+    <a href="https://infinitcast.shop/product/175545914159104899199204490694">
+      <button>👉 Quero Garantir Meu Acesso Agora</button>
+    </a>
+  </div>
+
+  <div class="prova-social">
+    <h2>📢 O que estão dizendo</h2>
+    <div class="depoimento">
+      "Com esse catálogo de prompts, consegui dobrar minhas vendas em menos de 1 semana."
+      <strong>– Marcos S.</strong>
+    </div>
+    <div class="depoimento">
+      "Antes eu perdia horas criando conteúdos, agora faço tudo em minutos. Vale cada centavo!"
+      <strong>– Ana P.</strong>
+    </div>
+    <div class="depoimento">
+      "Os prompts são extremamente bem organizados e funcionam para qualquer nicho."
+      <strong>– Ricardo L.</strong>
+    </div>
+    <div class="depoimento">
+      "Nunca imaginei que conseguiria gerar ideias tão criativas e poderosas com tão pouco esforço."
+      <strong>– Camila T.</strong>
+    </div>
+  <div class="depoimento">
+      "Antes eu perdia horas criando conteúdos, agora faço tudo em minutos. Vale cada centavo!"
+      <strong>– Andre P.</strong>
+    </div>
+</div>
+</section>
+
+<!-- Notificações -->
+<div id="notifications-container"></div>
+
+<footer>
+  <p>© 2025 – 1.800 Prompts Secretos do ChatGPT | Todos os direitos reservados</p>
+</footer>
+
+<script>
+  // Partículas neon
+  const canvas = document.getElementById('particles');
+  const ctx = canvas.getContext('2d');
+  let w, h;
+  let particles = [];
+  const numParticles = 100;
+
+  function resize() {
+    w = canvas.width = window.innerWidth;
+    h = canvas.height = window.innerHeight;
+  }
+  window.addEventListener('resize', resize);
+  resize();
+
+  class Particle {
+    constructor() {
+      this.reset();
+    }
+    reset() {
+      this.x = Math.random() * w;
+      this.y = Math.random() * h;
+      this.vx = (Math.random()-0.5)*0.5;
+      this.vy = (Math.random()-0.5)*0.5;
+      this.size = Math.random()*2+1;
+      this.alpha = Math.random()*0.5+0.5;
+    }
+    update() {
+      this.x += this.vx;
+      this.y += this.vy;
+      if(this.x<0||this.x>w||this.y<0||this.y>h) this.reset();
+    }
+    draw() {
+      ctx.fillStyle = `rgba(0,255,255,${this.alpha})`;
+      ctx.beginPath();
+      ctx.arc(this.x,this.y,this.size,0,Math.PI*2);
+      ctx.fill();
+    }
+  }
+
+  for(let i=0;i<numParticles;i++) particles.push(new Particle());
+
+  function animate() {
+    ctx.clearRect(0,0,w,h);
+    particles.forEach(p=>{p.update(); p.draw();});
+    requestAnimationFrame(animate);
+  }
+  animate();
+
+  // Notificações de compras
+  const buyers = [
+    {name: 'Marcos S.', product: '1.800 Prompts Secretos do ChatGPT'},
+    {name: 'Ana P.', product: '1.800 Prompts Secretos do ChatGPT'},
+    {name: 'Ricardo L.', product: '1.800 Prompts Secretos do ChatGPT'},
+    {name: 'Camila T.', product: '1.800 Prompts Secretos do ChatGPT'},
+    {name: 'Lucas M.', product: '1.800 Prompts Secretos do ChatGPT'},
+    {name: 'Juliana R.', product: '1.800 Prompts Secretos do ChatGPT'},
+    {name: 'Andre P.', product: '1.800 Prompts Secretos do ChatGPT'},
+    {name: 'José M.', product: '1.800 Prompts Secretos do ChatGPT'},
+    {name: 'Maria R.', product: '1.800 Prompts Secretos do ChatGPT'},
+];
+
+  const container = document.getElementById('notifications-container');
+
+  function showNotification() {
+    const randomBuyer = buyers[Math.floor(Math.random() * buyers.length)];
+    const notification = document.createElement('div');
+    notification.classList.add('notification');
+    notification.innerHTML = `✅ <strong>${randomBuyer.name}</strong> acabou de comprar <strong>${randomBuyer.product}</strong>!`;
+    container.appendChild(notification);
+
+    setTimeout(() => {
+      notification.style.opacity = '1';
+      notification.style.transform = 'translateX(0)';
+    }, 100);
+
+    setTimeout(() => {
+      notification.style.opacity = '0';
+      notification.style.transform = 'translateX(100%)';
+      setTimeout(() => container.removeChild(notification), 500);
+    }, 5000);
+  }
+
+  setInterval(showNotification, Math.floor(Math.random() * 4000) + 6000);
+</script>
+
+</body>
+</html>
